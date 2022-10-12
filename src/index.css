@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-notosans bg-slate-100/30;
+    }
+
+    .layout {
+        @apply px-4 sx:px-4 sm:px-8 lg:px-16 xl:px-20;
+    }
+
+    .link-underline {
+        border-bottom-width: 0;
+        background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+        background-size: 0 2px;
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size .5s ease-in-out;
+    }
+    
+    .link-underline:hover {
+        background-size: 100% 2px;
+        background-position: 0 100%
+    }
+    
+    .link-underline-black {
+        background-image: linear-gradient(transparent, transparent), linear-gradient(#000, #000)
+    }
+
+
+    .active {
+        @apply text-xs md:text-sm font-semibold text-black uppercase;
+    }
+
+    .inactive {
+        @apply text-xs md:text-sm font-medium text-gray-800 hover:text-black uppercase;
+    }
+}
