@@ -30,13 +30,13 @@ function HomePage() {
             ) : (
               <Card
                 key={index}
-                srcImg={news.urlToImage}
-                altImg={news.title}
-                urlTitle={news.url}
-                title={news.title}
-                author={news.author}
-                description={news.description}
-                urlNews={news.url}
+                srcImg={news?.urlToImage}
+                altImg={news?.title}
+                urlTitle={news?.url}
+                title={news?.title}
+                author={news?.author}
+                description={news?.description}
+                urlNews={news?.url}
               />
             )
           )}
