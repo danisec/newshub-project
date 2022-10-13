@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { addToSaved, removeFromSaved } from '../../../features/saved/savedSlice'
 import Skeleton from '../../UI/atoms/skeleton/Skeleton'
-import Card from '../../UI/organisms/Card/Card'
+import Card from '../../UI/organisms/card/Card'
 
 function SearchPage() {
   const dispatch = useDispatch()
