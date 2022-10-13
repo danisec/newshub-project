@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { fetchNews } from '../../../features/home/homeSlice'
 import { addToSaved, removeFromSaved } from '../../../features/saved/savedSlice'
 import Skeleton from '../../UI/atoms/skeleton/Skeleton'
-import Card from '../../UI/organisms/Card/Card'
+import Card from '../../UI/organisms/card/Card'
 
 function HomePage() {
   const dispatch = useDispatch()
