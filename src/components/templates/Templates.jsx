@@ -1,8 +1,11 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Navbar from '../UI/organisms/navbar/Navbar';
-import HomePage from '../pages/home';
-import ProgrammingPage from '../pages/programming';
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+
+import Navbar from '../UI/organisms/navbar/Navbar'
+
+import HomePage from '../pages/home'
+import ProgrammingPage from '../pages/programming'
+import SearchPage from '../pages/search'
 
 function Templates() {
   return (
@@ -10,11 +13,12 @@ function Templates() {
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="programming" element={<ProgrammingPage />} />
+        <Route path='/' element={<HomePage />} />
+        <Route path='programming' element={<ProgrammingPage />} />
+        <Route path='/search' element={<SearchPage />} />
       </Routes>
     </>
-  );
+  )
 }
 
-export default Templates;
+export default Templates
