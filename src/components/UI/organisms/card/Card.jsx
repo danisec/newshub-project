@@ -1,5 +1,5 @@
 import React from 'react'
-import ButtonReadMore from '../../atoms/button/buttonReadMore'
+import ButtonReadMore from '../../atoms/button/ButtonReadMore'
 import ButtonSaved from '../../atoms/button/ButtonSaved'
 
 function Card({
