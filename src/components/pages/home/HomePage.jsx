@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchNews } from '../../../features/home/homeSlice'
 import Skeleton from '../../UI/atoms/skeleton/Skeleton'
-import Card from '../../UI/organisms/Card/Card'
+import Card from '../../UI/organisms/card/Card'
 
 function HomePage() {
   const dispatch = useDispatch()

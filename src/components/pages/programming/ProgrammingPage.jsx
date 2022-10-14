@@ -1,25 +1,25 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchArticles } from '../../../features/programming/programmingSlice';
-import Skeleton from '../../UI/atoms/skeleton/Skeleton';
-import Card from '../../UI/organisms/Card/Card';
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchArticles } from '../../../features/programming/programmingSlice'
+import Skeleton from '../../UI/atoms/skeleton/Skeleton'
+import Card from '../../UI/organisms/card/Card'
 
 function ProgrammingPage() {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
 
-  const allArticles = useSelector((state) => state.programming.article);
-  const loading = useSelector((state) => state.programming.loading);
+  const allArticles = useSelector((state) => state.programming.article)
+  const loading = useSelector((state) => state.programming.loading)
   useEffect(() => {
-    dispatch(fetchArticles());
-  }, [dispatch]);
+    dispatch(fetchArticles())
+  }, [dispatch])
   return (
     <>
-      <div className="layout my-8 md:my-12">
-        <h2 className="flex justify-center text-xl font-bold text-gray-900 md:text-2xl">
+      <div className='layout my-8 md:my-12'>
+        <h2 className='flex justify-center text-xl font-bold text-gray-900 md:text-2xl'>
           Programing News
         </h2>
 
-        <div className="grid gap-2 sm:grid-cols-2 sm:gap-4 md:gap-8 lg:grid-cols-3 ">
+        <div className='grid gap-2 sm:grid-cols-2 sm:gap-4 md:gap-8 lg:grid-cols-3 '>
           {allArticles.map((news, index) =>
             loading ? (
               <Skeleton key={index} />
@@ -39,7 +39,7 @@ function ProgrammingPage() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default ProgrammingPage;
+export default ProgrammingPage
