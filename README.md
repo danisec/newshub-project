@@ -2,37 +2,54 @@
 
 ## Overview
 
-NewsHub adalah situs web yang memuat konten berita dan informasi terkini dan terbaru.
-
-<br />
-
-## Tech Stack
-
-NewsHub menggunakan API <a href="https://newsapi.org/" target="_blank">NewsAPI</a> dari sisi Front-End untuk mendapatkan informasi berita terkini. User Interface di build menggunakan ReactJS dan style Tailwind CSS.
-
-<br />
-
-### API : <a href="https://newsapi.org/" target="_blank">NewsAPI</a>
-
-<br />
-
-### Tech :
-
-<br />
-
-<div>
-
-<a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="reactjs" width="40" height="40"/>
-</a>
-<a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
-<img src="https://raw.githubusercontent.com/danisec/danisec/main/icon/tailwind.svg" alt="tailwind" width="40" height="40"/>
-</a>
-
-</div>
-
-<br />
-
-## Screenshot
+NewsHub is a website that contains up-to-date and up-to-date news and information content.
 
 ![NewsHub](https://raw.githubusercontent.com/danisec/assets/main/images/newshub/newshub.png)
+
+<br />
+
+## Getting Started
+
+- Clone the repo : `https://github.com/danisec/newshub-project.git`
+
+- Fork the repo
+
+<br />
+
+## About Template
+
+- Template building using ReactJS v18
+
+- Tailwind CSS v3
+
+- Using [News API](https://newsapi.org)
+
+<br />
+
+## Feature Template
+
+- Home Page
+
+- Programming Page
+
+- Covid-19 Page
+
+- Saved Page
+
+<br />
+
+## Bugs and Issues
+
+Have a bug or an issue with this template? [Open a new issue](https://github.com/danisec/newshub-project/issues/new) here on Github.
+
+<br />
+
+## Creator
+
+NewsHub was coded and modified by and is maintained by [me](https://github.com/danisec) and [syeikhan](https://github.com/syeikhanritzmy)
+
+<br />
+
+## Copyright and License
+
+Code released under the MIT license.
