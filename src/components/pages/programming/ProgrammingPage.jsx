@@ -34,7 +34,9 @@ function ProgrammingPage() {
         <div className='grid gap-2 sm:grid-cols-2 sm:gap-4 md:gap-8 lg:grid-cols-3 '>
           {allArticles.map((news, index) =>
             loading ? (
-              <Skeleton key={index} />
+              <div className='mt-10' key={index}>
+                <Skeleton />
+              </div>
             ) : (
               <Card
                 key={index}
