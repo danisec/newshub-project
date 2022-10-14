@@ -10,7 +10,9 @@ export const searchNews = createAsyncThunk(
   'search/searchNews',
   async (search) => {
     const response = await axios.get(
-      `https://newsapi.org/v2/everything?q=${search}&sortBy=publishedAt&apiKey=1cfa18d2d1c244e3863f19732e11da32`
+      `https://newsapi.org/v2/everything?q=${search}&sortBy=publishedAt&apiKey=${
+        import.meta.env.VITE_APP_API
+      }`
     )
     return response.data.articles
   }
