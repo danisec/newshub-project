@@ -1,5 +1,5 @@
 import React from 'react'
-import ButtonNewsPage from '../../atoms/button/buttonReadMore'
+import ButtonReadMore from '../../atoms/button/buttonReadMore'
 import ButtonSaved from '../../atoms/button/ButtonSaved'
 
 function Card({
@@ -35,7 +35,7 @@ function Card({
 
           <div className='mt-8 flex justify-between'>
             <a href={urlNews} target='_blank'>
-              <ButtonNewsPage buttonName='Read More' />
+              <ButtonReadMore buttonName='Read More' />
             </a>
 
             <ButtonSaved
