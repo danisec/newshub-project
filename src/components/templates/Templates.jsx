@@ -7,6 +7,8 @@ import HomePage from '../pages/home'
 import ProgrammingPage from '../pages/programming'
 import SearchPage from '../pages/search'
 
+import Footer from '../UI/organisms/footer/Footer'
+
 function Templates() {
   return (
     <>
@@ -17,6 +19,8 @@ function Templates() {
         <Route path='programming' element={<ProgrammingPage />} />
         <Route path='/search' element={<SearchPage />} />
       </Routes>
+
+      <Footer />
     </>
   )
 }
