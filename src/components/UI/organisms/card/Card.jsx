@@ -1,6 +1,7 @@
 import React from 'react'
 import ButtonReadMore from '../../atoms/button/ButtonReadMore'
 import ButtonSaved from '../../atoms/button/ButtonSaved'
+import ButtonBackToTop from '../../atoms/button/ButtonBackToTop'
 
 function Card({
   srcImg,
@@ -44,6 +45,8 @@ function Card({
           </div>
         </div>
       </div>
+
+      <ButtonBackToTop />
     </>
   )
 }
