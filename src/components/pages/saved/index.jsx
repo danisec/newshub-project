@@ -1,19 +1,17 @@
 import React from 'react';
-import ProgrammingPage from './ProgrammingPage';
+import SavedPage from './SavedPage';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Toaster } from 'react-hot-toast';
-
 function index() {
   return (
     <>
       <HelmetProvider>
         <Helmet>
-          <title>News - Programming</title>
+          <title>List - Save Article</title>
         </Helmet>
       </HelmetProvider>
-
       <Toaster />
-      <ProgrammingPage />
+      <SavedPage />
     </>
   );
 }
