@@ -45,7 +45,10 @@ function Navbar() {
         </div>
 
         <div className='flex items-center justify-between md:hidden'>
-          <Logo classLogo='h-auto w-28' />
+          <NavLink to='/'>
+            <Logo classLogo='h-auto w-28' />
+          </NavLink>
+
           <ButtonNavbar />
         </div>
       </div>

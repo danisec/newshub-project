@@ -1,15 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
+import { searchNews } from '../../../../features/search/searchSlice'
 
 function Search() {
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
+
+  const [search, setSearch] = useState('')
+
+  const submitHandler = (e) => {
+    e.preventDefault()
+    dispatch(searchNews(search))
+
+    if (search <= 0) {
+      setSearch('')
+    } else {
+      navigate(`/search/?q=${search}`, { replace: true })
+    }
+  }
+
+  const inputHandler = (e) => {
+    setSearch(e.target.value)
+  }
+
   return (
     <>
-      <form className='flex items-center'>
+      <form className='flex items-center' onSubmit={submitHandler}>
         <div className='relative flex w-full'>
           <input
             type='text'
             className='block w-60 rounded-full border border-gray-200 bg-white p-2 pl-4 pr-12 text-base font-normal text-gray-700 focus:border-gray-500 focus:outline-none
             focus:ring-1 focus:ring-gray-500 lg:w-72'
             placeholder='Search...'
+            onChange={inputHandler}
           />
 
           <button
