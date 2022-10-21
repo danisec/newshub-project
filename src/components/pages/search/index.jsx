@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 import { Toaster } from 'react-hot-toast'
-import SearchPage from './searchPage'
+import SearchPage from './SearchPage'
 
 function index() {
   return (
