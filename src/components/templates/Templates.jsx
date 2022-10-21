@@ -2,12 +2,12 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 
 import Navbar from '../UI/organisms/navbar/Navbar'
+import Footer from '../UI/organisms/footer/Footer'
 
 import HomePage from '../pages/home'
 import ProgrammingPage from '../pages/programming'
+import CovidPage from '../pages/covid'
 import SearchPage from '../pages/search'
-
-import Footer from '../UI/organisms/footer/Footer'
 
 function Templates() {
   return (
@@ -16,7 +16,8 @@ function Templates() {
 
       <Routes>
         <Route path='/' element={<HomePage />} />
-        <Route path='programming' element={<ProgrammingPage />} />
+        <Route path='/programming' element={<ProgrammingPage />} />
+        <Route path='/covid' element={<CovidPage />} />
         <Route path='/search' element={<SearchPage />} />
       </Routes>
 
