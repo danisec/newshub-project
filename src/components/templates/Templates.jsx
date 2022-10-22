@@ -7,8 +7,8 @@ import HomePage from '../pages/home'
 import ProgrammingPage from '../pages/programming'
 import CovidPage from '../pages/covid'
 import SearchPage from '../pages/search'
-
 import SavedPage from '../pages/saved'
+
 import Footer from '../UI/organisms/footer/Footer'
 
 function Templates() {
